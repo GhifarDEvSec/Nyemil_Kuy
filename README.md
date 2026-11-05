@@ -1,1 +1,0 @@
-# Nyemil_Kuy
