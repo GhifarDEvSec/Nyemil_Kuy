@@ -47,7 +47,6 @@ Aplikasi nyemil_kuy memiliki alur yang saling terhubung secara fungsional. Berik
    <br>
    <img width="250" alt="profile" src="https://github.com/user-attachments/assets/2feac7be-dd48-43ec-9458-ffbf6e770dde" /> <img width="250" alt="chnage name" src="https://github.com/user-attachments/assets/ba74a38c-cfa0-4b35-beaf-064be7b5b065" />
 
-
 ## Teknologi yang Digunakan
 
 - Bahasa Pemrograman: Kotlin
@@ -63,9 +62,57 @@ Aplikasi ini didesain sebagai purwarupa (prototype) yang berfokus pada kelancara
 Fungsi pendaftaran (Register) dan masuk (Login) disimulasikan melalui logika validasi dasar dan penyimpanan sesi menggunakan variabel global di dalam struktur `object` (Singleton) bawaan Kotlin. Berikut adalah penjabaran teknisnya:
 
 1. Penyimpanan Sesi Pengguna
-   Aplikasi menggunakan objek statis bernama `UserManager` untuk menyimpan nama pengguna yang sedang aktif. Data ini tersimpan di memori (RAM) selama aplikasi berjalan.
+   Aplikasi menggunakan objek statis bernama `UserManager` untuk menyimpan nama pengguna yang sedang aktif. Data ini tersimpan di memori (RAM) selama aplikasi berjalan.
 
-```kotlin
+```
 object UserManager {
-    var userName: String = "Pelanggan"
+    var userName: String = "Pelanggan"
 }
+
+```
+
+2. Logika Pendaftaran (RegisterActivity)
+   Sistem mengekstraksi input pengguna dan melakukan validasi sederhana. Jika kolom terisi, nama pengguna langsung disimpan ke dalam objek Singleton sebagai penanda sesi aktif.
+
+```
+val username = binding.etRegUsername.text.toString().trim()
+val password = binding.etRegPassword.text.toString().trim()
+
+// Validasi keberadaan data
+if (username.isNotEmpty() && password.isNotEmpty()) {
+    // Menyimpan sesi secara lokal tanpa request ke server
+    UserManager.userName = if (name.isNotEmpty()) name else username
+    // Sistem melanjutkan navigasi ke HomeActivity...
+}
+
+```
+
+3. Logika Masuk (LoginActivity)
+   Mekanisme login mengadopsi prinsip yang serupa. Setelah memastikan kolom tidak kosong, sistem memercayai input pengguna dan langsung memperbarui sesi aktif.
+
+```
+val username = binding.etUsername.text.toString().trim()
+val password = binding.etPassword.text.toString().trim()
+
+if (username.isNotEmpty() && password.isNotEmpty()) {
+    // Menetapkan sesi pengguna saat ini
+    UserManager.userName = username
+    // Sistem melanjutkan navigasi ke HomeActivity...
+}
+
+```
+
+Pendekatan ini sangat efektif untuk mendemonstrasikan purwarupa fungsional kepada evaluator, memastikan alur UI/UX dapat diuji secara utuh tanpa terhambat oleh kompleksitas integrasi peladen (server) backend.
+
+## Cara Mendebug dan Menjalankan Aplikasi dengan local Handphone
+
+1. Buka perangkat lunak Android Studio.
+
+2. Pilih opsi "Open" dan navigasikan ke direktori folder nyemil_kuy yang telah diunduh.
+
+3. Tunggu hingga Android Studio menyelesaikan proses sinkronisasi Gradle (pastikan perangkat terhubung ke internet).
+
+4. Sambungkan perangkat Android fisik Anda menggunakan kabel USB (pastikan mode USB Debugging aktif) atau siapkan Android Virtual Device (Emulator).
+
+5. Klik tombol "Run" pada panel atas Android Studio atau gunakan pintasan Shift + F10 untuk mengompilasi dan memasang aplikasi pada perangkat.
+ubah pto jangan besar tapi dapat terihat catatan jangan ubah apapun selain besaran pto doang
