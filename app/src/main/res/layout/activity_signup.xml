@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/margin_large">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textColor="@color/primary_green"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join as a member and experience more fun from various meal at mesen_gube marketing app"
+        android:textColor="@color/text_muted"
+        android:textSize="@dimen/text_subtitle"
+        android:textAlignment="center"
+        android:layout_marginBottom="48dp" />
+
+    <Button
+        android:id="@+id/btnGoRegister"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/bg_button_green"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="@color/card_white"
+        android:textSize="@dimen/text_price"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/btnGoLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/bg_input_light"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_green"
+        android:textSize="@dimen/text_price"
+        android:textStyle="bold"
+        app:backgroundTint="@null" />
+</LinearLayout>
