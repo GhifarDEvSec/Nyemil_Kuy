@@ -16,7 +16,7 @@ Aplikasi nyemil_kuy memiliki alur yang saling terhubung secara fungsional. Berik
 2. **Autentikasi Pengguna (Welcome, Register, dan Login)**
    Pengguna baru akan diarahkan ke halaman Welcome/Sign Up. Pengguna dapat mendaftarkan akun baru melalui halaman Register dengan mengisi nama lengkap, username, dan kata sandi. Setelah berhasil mendaftar, data akan disimpan sementara di dalam memori aplikasi, dan pengguna dapat masuk melalui halaman Login menggunakan kredensial yang telah didaftarkan.
    
-   *Layar Pilihan Login atau Register | Pendaftaran (Register) | Masuk (Login)*
+   *Layar Signup Login atau Register | Pendaftaran (Register) | Masuk (Login)*
    <br>
    <img width="250" alt="signup" src="https://github.com/user-attachments/assets/c88b8e59-b917-4474-b5df-f005fa064369" /> <img width="250" alt="register" src="https://github.com/user-attachments/assets/c0b4779e-31f9-492c-97c3-4f350862cbfa" /> <img width="250" alt="login" src="https://github.com/user-attachments/assets/4dba4441-7488-4866-b111-4f991f30c882" />
 
@@ -26,7 +26,7 @@ Aplikasi nyemil_kuy memiliki alur yang saling terhubung secara fungsional. Berik
    <img width="250" alt="home" src="https://github.com/user-attachments/assets/fc46e9d7-d374-4dee-8667-90955a883787" />
 
 4. **Keranjang Belanja (Cart)**
-   Ketika pengguna menekan tombol tambah pada produk atau mengakses menu Order pada navigasi bawah, aplikasi akan memunculkan keranjang belanja dalam bentuk Bottom Sheet (panel yang muncul dari bawah layar). Di sini, pengguna dapat mengatur jumlah item (tambah/kurang). Sistem akan secara otomatis (real-time) menghitung Subtotal, Ongkos Kirim, Pajak, dan Total tagihan.
+   Ketika pengguna menekan tombol tambah pada produk atau mengakses menu Order pada navigasi bawah, aplikasi akan memunculkan keranjang belanja dalam bentuk Bottom Sheet (panel yang muncul dari bawah layar). Di sini, pengguna dapat mengatur jumlah item (tambah/kurang). Sistem akan secara otomatis (real-time) menghitung Subtotal, Ongkos Kirim, dan Total tagihan.
    <br>
    <img width="250" alt="cart" src="https://github.com/user-attachments/assets/097efa19-bf31-4efb-a284-87b3340f8efa" />
 
