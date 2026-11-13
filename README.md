@@ -104,15 +104,16 @@ if (username.isNotEmpty() && password.isNotEmpty()) {
 
 Pendekatan ini sangat efektif untuk mendemonstrasikan purwarupa fungsional kepada evaluator, memastikan alur UI/UX dapat diuji secara utuh tanpa terhambat oleh kompleksitas integrasi peladen (server) backend.
 
-## Cara Mendebug dan Menjalankan Aplikasi dengan local Handphone
+## Cara Mendebug dan Menjalankan Aplikasi 
 
-1. Buka perangkat lunak Android Studio.
+1. Buka Aplikasi lalu tekan Mulai
 
-2. Pilih opsi "Open" dan navigasikan ke direktori folder nyemil_kuy yang telah diunduh.
+2. Pilih opsi Login (sudah memiliki akun) atau Register (Belum memiliki akun)
 
-3. Tunggu hingga Android Studio menyelesaikan proses sinkronisasi Gradle (pastikan perangkat terhubung ke internet).
+3. Setelah Sign up, Lakukan pemilihan makanan atau minuman minimal 1 item. lalu tekan checkout.
 
-4. Sambungkan perangkat Android fisik Anda menggunakan kabel USB (pastikan mode USB Debugging aktif) atau siapkan Android Virtual Device (Emulator).
+4. Setelah checkout masukkan alamat dan keterangan untuk pemesanan, jika sudah diisi tekan pesan. 
 
-5. Klik tombol "Run" pada panel atas Android Studio atau gunakan pintasan Shift + F10 untuk mengompilasi dan memasang aplikasi pada perangkat.
-ubah pto jangan besar tapi dapat terihat catatan jangan ubah apapun selain besaran pto doang
+5. Tampilan akan menunjukkan pemesanan akan diantar
+
+6. Mengganti nama dengan menekan tombol profile, lalu mengganti nama pengguna untuk pemesanan.
